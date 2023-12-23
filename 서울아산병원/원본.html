@@ -1,29 +1,289 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="ko" xml:lang="ko">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
   <title>서울아산병원</title>
+
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KKN9WJ5');</script>
+  <!-- End Google Tag Manager -->
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="description" content="앞선 의술 더 큰 사랑을 실천하는 서울아산병원 입니다" />
+  <meta name="Keywords"
+    content="서울아산병원, 아산병원, 의료진,진료과,건강정보,건강TV,오시는길,위치안내,둘러보기, 의학교육, 웹서비스, 병원이야기, 병원소개, 진료예약, 나의챠트, 질환백과" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- KAKAOTALK -->
+
+  <meta property="og:url" content="http://www.amc.seoul.kr/asan/main.do">
+  <meta property="og:image" content="/asan/images/common/linkImg.png">
+  <meta property="og:description" content="앞선 의술 더 큰 사랑을 실천하는 서울아산병원 입니다">
+
+  <!-- KAKAOTALK -->
+
+  <!--=== FOR FACEBOOK ===-->
+
+  <meta property="og:type" content="website" />
+  <meta id="facebookTitle" property="og:title" content="" />
+  <meta id="facebookUrl" property="og:url" content="" />
+  <meta id="facebookImage" property="og:image" content="/asan/images/common/linkImg.png" />
+
+  <!--=== //FOR FACEBOOK ===-->
+
+  <meta name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=2.0, user-scalable=yes" />
+  <link rel="shortcut icon" href="/asan/images/common/favi.ico" />
+
+  <!--=== CSS ===-->
+
+  <link href="/asan/css/asanMain.css" rel="stylesheet" type="text/css" />
+  <!--아산메인페이지(index) -->
+
+  <link href="/asan/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="/asan/css/common.css" rel="stylesheet" type="text/css" />
+  <link href="/asan/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/asan/css/search.css" rel="stylesheet" type="text/css" />
+  <!--  통합검색 자동완성 -->
+
+  <!--=== JavaScript ===-->
+
+  <script type="text/javascript" src="/asan/js/main/jquerycombine.js"></script>
+  <script type="text/javascript" src="/asan/js/main/combine.js"></script>
+  <script type="text/javascript" src="/asan/js/main/searchcombine.js"></script>
+
+  <span itemscope="" itemtype="http://schema.org/Organization">
+    <link itemprop="url" href="http://www.amc.seoul.kr">
+    <a itemprop="sameAs" href="https://blog.naver.com/amc_seoul"></a>
+    <a itemprop="sameAs" href="https://post.naver.com/amc_seoul"></a>
+    <a itemprop="sameAs" href="https://www.facebook.com/AMC.SEOUL"></a>
+    <a itemprop="sameAs" href="https://www.instagram.com/amc_seoul"></a>
+    <a itemprop="sameAs" href="https://www.youtube.com/user/AsanMedicalCenter"></a>
+    <a itemprop="sameAs" href="https://twitter.com/AMC_SEOUL"></a>
+  </span>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-53195438-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4T8CJWQ3M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-P4T8CJWQ3M');
+  </script>
+  <link rel="stylesheet" type="text/css" href="/asan/css/mainNew.css" />
+  <link rel="stylesheet" type="text/css" href="/asan/css/swiper.css" />
+  <script type="text/javascript" src="/asan/js/swiper.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/asan/css/jsdelivr/scrollbar.min.css" />
+  <script type="text/javascript" src="/asan/js/jsdelivr/swiper-bundle.min.js"></script>
+
+  <script>
+    function kwdSearch2() {
+
+      ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-통합검색-검색');
+
+
+      var str = $('#middleKwd').val();
+
+
+      var pattern = /[^(가-힣ㄱ-ㅎㅏ-ㅣa-zA-Z0-9)]/gi;
+
+      if (pattern.test(str)) {
+        str = str.replace(pattern, ' ');
+      }
+
+      if (str == "") {
+        alert("검색어를 입력해주세요. 특수문자는 검색되지 않습니다.");
+        return false;
+      }
+
+      location.href = "/asan/search/search.do?kwd=" + str;
+
+    }
+
+    function onDown() {
+
+      // 엔터키의 코드는 13입니다.
+      if (event.keyCode == 13) {
+        kwdSearch2();
+        return;
+      }
+    }
+
+
+  </script>
+
 </head>
+
 <body id="asanMain">
+
+
+  <script type="text/javascript">
+
+    $(document).ready(function () {
+
+      $("#gnb>li>a").on("mouseover focusin", function () {
+
+        var index = $("#gnb>li>a").index(this) + 1;
+
+        $("#snbOpen").show();
+        $(".subBox").hide();
+        $("#snbNav" + index).show();
+        $("#gnb>li>span").removeClass("on");
+        $("#choice" + index).addClass("on");
+
+      });
+
+      $("#snbOpen").mouseleave(function () {
+        $("#gnb>li>span").removeClass("on");
+        $("#snbOpen").hide();
+      });
+
+
+      $(".utilBox").mouseenter(function () {
+        $("#gnb>li>span").removeClass("on");
+        $("#snbOpen").hide();
+      });
+
+
+      //언어별메뉴Drop Down
+      $(".drop_lang").on("click", ".btn_drop", function (e) {
+
+        e.preventDefault();
+        var $this = $(this);
+
+        if ($(".drop_lang").hasClass("on")) {
+          $(".drop_lang").removeClass("on");
+          $(".lang_menu").hide('blind', 350);
+        } else {
+          $this.closest("li").addClass("on");
+          $(".lang_menu").show('blind', 350);
+        }
+
+        ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-LANGUAGE');
+      });
+
+    });
+
+
+    function wrapWindowByMask() {
+
+      //화면의 높이와 너비를 구한다.
+      var maskHeight = $(document).height();
+      var maskWidth = $(window).width();
+
+      //마스크의 높이와 너비를 화면 것으로 만들어 전체 화면을 채운다.
+      $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+
+      //애니메이션 효과
+      //$('#mask').fadeIn(10);      
+      //$('#mask').fadeTo("fast",0.8);
+
+      $('#mask').show();
+      $('.window').show();
+      $('#topKwd').focus();
+
+      //searchFavoriteKeyword();
+      //tglAkcVsb(true);
+
+      ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-통합검색');
+    }
+
+    function wrapWindowByMaskClose() {
+
+      $('#topKwd').val("");
+      $('#mask').hide();
+      $('.window').hide();
+
+      ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-통합검색-닫기');
+    }
+
+    function kwdDel() {
+      $('#topKwd').val("");
+      $('#topKwd').focus();
+      $('.SearchTextDel').css('display', 'none');
+
+      ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-통합검색-글자초기화');
+    }
+
+    function kwdSearch() {
+
+      ga('send', 'event', '메인-GNB', 'CLICK', '메인-GNB-통합검색-검색');
+
+
+      var str = $('#topKwd').val();
+
+
+      var pattern = /[^(가-힣ㄱ-ㅎㅏ-ㅣa-zA-Z0-9)]/gi;
+
+      if (pattern.test(str)) {
+        str = str.replace(pattern, ' ');
+      }
+
+      if (str == "") {
+        alert("검색어를 입력해주세요. 특수문자는 검색되지 않습니다.");
+        return false;
+      }
+
+      location.href = "/asan/search/search.do?kwd=" + str;
+
+    }
+
+  </script>
+
+
   <!-- skipToContent -->
   <div id="skipToContent">
     <a href="#content">본문바로가기</a>
   </div>
   <!-- //skipToContent -->
+
+
+
   <div class="mainHeader">
     <div class="utilBox">
-      <p class="bannerBtn">
-        <a href="" id="topBnrOpen"><img src="/asan/images/btn/btn_topOpen.png" alt="open" /></a>
-      </p>
+      <p class="bannerBtn"><a href="#topBannerWrap" id="topBnrOpen"><img src="/asan/images/btn/btn_topOpen.png"
+            alt="open" /></a></p>
       <div class="util_menu">
         <ul>
-          <li><a href="#" onclick="" class="btnLogin">로그인</a></li>
-          <li><a href="" onclick="">회원가입</a></li>
-          <li><a href="" onclick="">나의차트</a></li>
-          <li><a href="" onclick="">병원둘러보기</a></li>
-          <li><a href="" onclick="">오시는길</a></li>
-          <li><a href="" onclick=""></a></li>
+
+          <li><a href="#" onclick="fnCommonLoginTop(); return false;" class="btnLogin">로그인</a></li>
+          <li><a href="/asan/member/join/intro.do"
+              onclick="ga('send', 'event', '메인-TOP', 'CLICK', '메인-TOP-회원가입');">회원가입</a></li>
+
+          <li><a href="/asan/mychart/main.do" onclick="ga('send', 'event', '메인-TOP', 'CLICK', '메인-TOP-나의차트');">나의차트</a>
+          </li>
+          <li><a href="/asan/hospitalguide/lookaround/lookAround.do"
+              onclick="ga('send', 'event', '메인-TOP', 'CLICK', '메인-TOP-병원둘러보기');" target="_blank">병원둘러보기</a></li>
+          <li class="last"><a href="/asan/hospitalguide/location/location.do"
+              onclick="ga('send', 'event', '메인-TOP', 'CLICK', '메인-TOP-오시는길');">오시는길</a></li>
           <li class="drop_lang"><!-- class="on"추가 -->
             <a class="btn_drop" href="#none">Language</a>
             <div class="lang_menu">
